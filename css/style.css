@@ -1,6 +1,7 @@
 :root {
   --timer_elicopteros: 0.3s;
   --timer_amigo: 0.9s;
+  --explosao_amigo: 0.5s;
 }
 
 @font-face {
@@ -100,6 +101,11 @@ body {
   position: absolute;
 }
 
+#explosao3 {
+  width: 44px;
+  height: 51px;
+  position: absolute;
+}
 /* Animação do helicóptero */
 
 .anima1 {
@@ -221,5 +227,62 @@ body {
   }
   to {
     background-position: -528px;
+  }
+}
+
+/* explosão do amigo */
+.anima4 {
+  width: 44px;
+  height: 51px;
+  background-image: url(../imgs/amigo_explosao.png);
+  animation: play3 var(--explosao_amigo) steps(7) infinite;
+  -webkit-animation: play3 var(--explosao_amigo) steps(7) infinite;
+  -moz-animation: play3 var(--explosao_amigo) steps(7) infinite;
+  -ms-animation: play3 var(--explosao_amigo) steps(7) infinite;
+  -o-animation: play3 var(--explosao_amigo) steps(7) infinite;
+}
+
+@keyframes play3 {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -308px;
+  }
+}
+
+@-webkit-keyframes play3 {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -308px;
+  }
+}
+
+@-moz-keyframes play3 {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -308px;
+  }
+}
+
+@-ms-keyframes play3 {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -308px;
+  }
+}
+
+@-o-keyframes play3 {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -308px;
   }
 }
