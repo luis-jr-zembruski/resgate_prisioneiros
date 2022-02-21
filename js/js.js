@@ -14,7 +14,7 @@ function start() {
 
   //Game Loop
 
-  jogo.timer = setInterval(loop, 30)
+  jogo.timer = setInterval(loop, 15)
 
   function loop() {
     movefundo()

@@ -1,3 +1,8 @@
+:root {
+  --timer_elicopteros: 0.3s;
+  --timer_amigo: 0.9s;
+}
+
 @font-face {
   font-family: Titulo;
   src: url(../fontes/ANODETONOONE.TTF);
@@ -80,12 +85,12 @@ body {
 
 .anima1 {
   background-image: url(../imgs/helicoptero.png);
-  animation: play 0.5s steps(2) infinite;
+  animation: play var(--timer_elicopteros) steps(2) infinite;
 
-  -webkit-animation: play 0.5s steps(2) infinite;
-  -moz-animation: play 0.5s steps(2) infinite;
-  -ms-animation: play 0.5s steps(2) infinite;
-  -o-animation: play 0.5s steps(2) infinite;
+  -webkit-animation: play var(--timer_elicopteros) steps(2) infinite;
+  -moz-animation: play var(--timer_elicopteros) steps(2) infinite;
+  -ms-animation: play var(--timer_elicopteros) steps(2) infinite;
+  -o-animation: play var(--timer_elicopteros) steps(2) infinite;
 }
 
 @keyframes play {
@@ -137,22 +142,22 @@ body {
 
 .anima2 {
   background-image: url(../imgs/inimigo1.png);
-  animation: play 0.5s steps(2) infinite;
-  -webkit-animation: play 0.5s steps(2) infinite;
-  -moz-animation: play 0.5s steps(2) infinite;
-  -ms-animation: play 0.5s steps(2) infinite;
-  -o-animation: play 0.5s steps(2) infinite;
+  animation: play var(--timer_elicopteros) steps(2) infinite;
+  -webkit-animation: play var(--timer_elicopteros) steps(2) infinite;
+  -moz-animation: play var(--timer_elicopteros) steps(2) infinite;
+  -ms-animation: play var(--timer_elicopteros) steps(2) infinite;
+  -o-animation: play var(--timer_elicopteros) steps(2) infinite;
 }
 
 /* Animação do amigo */
 
 .anima3 {
   background-image: url(../imgs/amigo.png);
-  animation: play2 0.9s steps(12) infinite;
-  -webkit-animation: play2 0.9s steps(12) infinite;
-  -moz-animation: play2 0.9s steps(12) infinite;
-  -ms-animation: play2 0.9s steps(12) infinite;
-  -o-animation: play2 0.9s steps(12) infinite;
+  animation: play2 var(--timer_amigo) steps(12) infinite;
+  -webkit-animation: play2 var(--timer_amigo) steps(12) infinite;
+  -moz-animation: play2 var(--timer_amigo) steps(12) infinite;
+  -ms-animation: play2 var(--timer_amigo) steps(12) infinite;
+  -o-animation: play2 var(--timer_amigo) steps(12) infinite;
 }
 
 @keyframes play2 {
