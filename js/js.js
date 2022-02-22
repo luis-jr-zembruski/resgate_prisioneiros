@@ -383,10 +383,10 @@ function start() {
         "<div id='reinicia' onClick=reiniciaJogo()><h3>Jogar Novamente</h3></div>"
     )
   }
-
-  function reiniciaJogo() {
-    somGameover.pause()
-    $('#fim').remove()
-    start()
-  }
 } // Fim da função start
+
+function reiniciaJogo() {
+  somGameover.pause()
+  $('#fim').remove()
+  start()
+}
