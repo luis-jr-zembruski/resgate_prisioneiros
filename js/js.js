@@ -48,7 +48,7 @@ function start() {
   jogo.pressionou = []
 
   // variáveis do inimigo
-  var velocidade = 5
+  var velocidade = 2
   var posicaoY = parseInt(Math.random() * 334)
 
   var podeAtirar = true
